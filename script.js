@@ -1,4 +1,4 @@
-﻿class FlipBook{
+class FlipBook{
     constructor(bookElem){
         this.elems={
             book:bookElem,
@@ -133,6 +133,9 @@ function setupMusic(){
         return;
     }
 
+    // Cargar la música
+    audio.src = "src/Akaza's Love Theme - Demon Slayer_ Infinity Castle OST (Piano Cover Version).mp3";
+
     button.addEventListener("click", async ()=>{
         if(audio.paused){
             try{
@@ -141,6 +144,7 @@ function setupMusic(){
                 button.classList.remove("has-error");
                 button.setAttribute("aria-label", "Pausar musica");
             }catch(error){
+                console.error("Error al reproducir audio:", error);
                 button.classList.add("has-error");
                 button.setAttribute("aria-label", "Agrega musica.mp3 para activar la musica");
             }
