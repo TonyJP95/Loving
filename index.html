@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="petal-field" aria-hidden="true">
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+        <span class="petal"></span>
+    </div>
+    <div class="burst-field" id="burstField" aria-hidden="true"></div>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Activar musica">♪</button>
+    <audio id="bgMusic" src="/TrLibroAnimado/src/Akaza's Love Theme - Demon Slayer_ Infinity Castle OST (Piano Cover  Version).mp3" loop preload="none"></audio>
+
+    <div class="flipbook centered" id="flipbook">
+        <div class="leaf">
+            <div class="page front title external cover-page">
+                <div class="cover-ornament">♡</div>
+                <h1>Para Ti, Vany</h1>
+                <em>Un pedacito de lo que siento de verdad</em>
+            </div>
+            <div class="page back image-page page-gold photo-page photo-open">
+                <div class="pageNumber">i</div>
+                <img src="src/img2.jpeg" alt="Nosotros juntos">
+                <div class="photo-caption">Mi lugar favorito en el mundo siempre es un momento contigo.</div>
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front page-gold dedication-page memory-index">
+                <div class="pageNumber">ii</div>
+                <h2>Contenido</h2>
+                <div class="contents-row">
+                    <div class="text">Lo que iluminas</div>
+                    <div class="spacer"></div>
+                    <div class="text">1</div>
+                </div>
+                <div class="contents-row">
+                    <div class="text">Mis fantasmas</div>
+                    <div class="spacer"></div>
+                    <div class="text">3</div>
+                </div>
+                <div class="contents-row">
+                    <div class="text">Una promesa honesta</div>
+                    <div class="spacer"></div>
+                    <div class="text">5</div>
+                </div>
+                <figure class="memory-strip">
+                    <img src="src/img1.jpeg" alt="Recuerdo juntos">
+                </figure>
+            </div>
+            <div class="page back page-olive letter-page">
+                <div class="pageNumber">1</div>
+                <h2>Lo que iluminas</h2>
+                <figure class="memory-photo small-photo float-right">
+                    <img src="src/img3.jpeg" alt="Recuerdo en la playa">
+                </figure>
+                <p>Hay personas que llegan suavecito, como una canción en el piano que no sabías que necesitabas, y terminan cambiándolo todo. Así llegaste tú a moverme el piso de una forma que no esperaba.</p>
+                <p>Me gusta absolutamente todo de ti: tu manera de existir, tu risa, tu mirada y esa calma tan bonita que me haces sentir cuando todo alrededor parece ir demasiado rápido.</p>
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front page-olive letter-page">
+                <div class="pageNumber">2</div>
+                <h2>La verdad de frente</h2>
+                <p>Quiero ser completamente honesto contigo, Vany. La verdad no es que sea indeciso o que para mí sea un juego estar contigo. La realidad es que me enamoré genuinamente de ti.</p>
+                <p>Y precisamente porque este sentimiento es tan real y tan fuerte, me dio pavor. Me asusté tanto de ser vulnerable que yo mismo me envenené buscando excusas estúpidas para alejarme y protegerme dentro de mi armadura.</p>
+                <figure class="memory-photo wide-photo">
+                    <img src="src/img4.jpeg" alt="Sonrisa en la playa">
+                </figure>
+                <p>Ese fue mi gran error y te pido una disculpa de corazón por haberte confundido.</p>
+            </div>
+            <div class="page back page-coral letter-page">
+                <div class="pageNumber">3</div>
+                <h2>Mis fantasmas</h2>
+                <figure class="memory-photo tall-photo">
+                    <img src="src/img5.jpeg" alt="Abrazo en el mar">
+                </figure>
+                <p>Me daba terror abrir mi corazón porque pensaba que mostrarme débil me haría daño. Pero después de todo lo que pasó, me di cuenta de que no puedo seguir escondiéndome detrás del orgullo.</p>
+                <p>No quiero perder algo tan importante y único para mí simplemente por dejarme ganar por mis propias inseguridades.</p>
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front page-coral letter-page final-letter">
+                <div class="pageNumber">4</div>
+                <h2>Para seguir</h2>
+                <p>Tengo claro quién soy, lo que valgo y la disciplina que tengo en todo lo que hago. Pero hoy elijo poner todo eso para dar mi mejor versión por ti, tanto en los detalles del día a día como en cada jugada en la cancha.</p>
+                <p>Estoy dispuesto a hacer las cosas bien, a hablar de frente y a cuidarte como te mereces. Por cierto... sé perfectamente que te hace falta un beso, y ten por seguro que esa rosa ya es tuya en cuanto te vea.</p>
+                <p class="signature">Con cariño eterno,<br><span>Tony</span></p>
+            </div>
+            <div class="page back external image-page back-cover ending-page">
+                <img src="src/img6.jpeg" alt="Foto final juntos">
+                <div class="ending-message">
+                    <span>♡</span>
+                    <h2>¿Quieres seguir escribiendo esta historia conmigo?</h2>
+                    <p>Porque contigo, hasta los días más simples se vuelven memorables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls centered">
+        <button id="prevPage" type="button">&lt; Anterior</button>
+        <button id="nextPage" type="button">Siguiente &gt;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
