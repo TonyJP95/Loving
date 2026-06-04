@@ -133,8 +133,8 @@ function setupMusic(){
         return;
     }
 
-    // Cargar la música
-    audio.src = "src/Akaza's Love Theme - Demon Slayer_ Infinity Castle OST (Piano Cover Version).mp3";
+    // Cargar la música con el nombre exacto del archivo (nota los dos espacios antes de Version)
+    audio.src = "src/Akaza's Love Theme - Demon Slayer_ Infinity Castle OST (Piano Cover  Version).mp3";
 
     button.addEventListener("click", async ()=>{
         if(audio.paused){
